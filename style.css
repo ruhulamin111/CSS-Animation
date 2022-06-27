@@ -1,0 +1,29 @@
+.title {
+    color: indigo;
+    text-align: center;
+}
+
+.field {
+    border: 2px solid indigo;
+}
+
+.bat {
+    width: 20%;
+}
+
+.ball {
+    width: 3%;
+    position: relative;
+    left: 55px;
+}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    transition: transform 0.2s ease-in;
+}
+
+.field:hover .ball {
+    transform: translate(600px, -100px);
+    transition: transform 0.5s ease-out 0.2s;
+}
