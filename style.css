@@ -5,6 +5,8 @@
 
 .field {
     border: 2px solid indigo;
+    width: 1000px;
+    height: 300px;
 }
 
 .bat {
@@ -26,4 +28,64 @@
 .field:hover .ball {
     transform: translate(600px, -100px);
     transition: transform 0.5s ease-out 0.2s;
+}
+
+.stage {
+    width: 1000px;
+    height: 400px;
+    background-color: springgreen;
+}
+
+.ping-ball {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: indigo;
+    position: relative;
+    animation: ping-pong 10s ease-in-out 0s infinite alternate;
+    animation-play-state: running;
+}
+
+@keyframes ping-pong {
+    0% {
+        background-color: indigo;
+        left: 0;
+        top: 0;
+    }
+
+    20% {
+        background-color: deepskyblue;
+        top: 330px;
+        left: 186px;
+        transform: scale(50%);
+    }
+
+    40% {
+        background-color: yellowgreen;
+        top: 0;
+        left: 272px;
+        transform: scale(100%);
+    }
+
+    60% {
+        background-color: red;
+        top: 330px;
+        left: 558px;
+        transform: scale(50%);
+    }
+
+    80% {
+        background-color: whitesmoke;
+        top: 0;
+        left: 744px;
+        transform: scale(100%);
+    }
+
+
+    100% {
+        background-color: tomato;
+        top: 330px;
+        left: 930px;
+        transform: scale(50%);
+    }
 }
