@@ -55,7 +55,7 @@
 
     20% {
         background-color: deepskyblue;
-        top: 330px;
+        top: 348px;
         left: 186px;
         transform: scale(50%);
     }
@@ -69,7 +69,7 @@
 
     60% {
         background-color: red;
-        top: 330px;
+        top: 348px;
         left: 558px;
         transform: scale(50%);
     }
@@ -84,7 +84,7 @@
 
     100% {
         background-color: tomato;
-        top: 330px;
+        top: 348px;
         left: 930px;
         transform: scale(50%);
     }
